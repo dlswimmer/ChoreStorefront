@@ -1,0 +1,26 @@
+{
+  "extends": "../tsconfig-base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/typewriter/*": [
+        "../typewriter/*"
+      ],
+      "~/*": [
+        "./*"
+      ]
+    }
+  },
+  "references": [
+    {
+      "path": "../typewriter"
+    }
+  ],
+  "include": [
+    "src",
+    "../typewriter/definitions/*.d.ts",
+    "../typewriter/*.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
